@@ -1,0 +1,60 @@
+{{ define "style-tags" }}
+  <style nonce="{{ .CspNonce }}">
+    .progress {
+      max-width: 70ch;
+    }
+
+    .notification {
+      max-width: 70ch;
+    }
+
+    .code {
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
+    }
+  </style>
+{{ end }}
+
+{{ define "script-tags" }}
+{{ end }}
+
+{{ define "custom-elements" }}
+{{ end }}
+
+{{ define "content" }}
+  <h1 class="title">Disk Usage</h1>
+
+  <progress
+    class="progress is-primary"
+    max="{{ .TotalBytes }}"
+    value="{{ .UsedBytes }}"
+  >
+    {{ percentage .UsedBytes .TotalBytes }}
+  </progress>
+
+  <p>
+    <strong>Used space</strong>:
+    {{ formatFileSize .UsedBytes }}
+    ({{ percentage .UsedBytes .TotalBytes }})
+  </p>
+  <p><strong>Total disk space</strong>: {{ formatFileSize .TotalBytes }}</p>
+
+  <div class="notification is-info is-light">
+    <p>
+      <strong>Note</strong>: Your used space may be higher than the sum total of
+      your files.
+    </p>
+    <p>
+      When you delete files, Doris retains the space and reuses it to store
+      future uploads.
+    </p>
+    <p>
+      To reclaim unused space immediately, see the
+      <a href="https://github.com/mtlynch/picoshare#parameters"
+        ><span class="code">-vacuum</span> option</a
+      >.
+    </p>
+  </div>
+{{ end }}
+
+{{ template "base.html" }}

@@ -376,7 +376,7 @@ func (s Server) authGet() http.HandlerFunc {
 		if err := renderTemplate(w, "auth.html", struct {
 			commonProps
 		}{
-			commonProps: makeCommonProps("Doris - Log in", r.Context()),
+			commonProps: makeCommonProps("Doris - Connect", r.Context()),
 		}, template.FuncMap{}); err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return

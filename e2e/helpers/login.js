@@ -2,7 +2,7 @@ import { expect } from "@playwright/test";
 
 export async function login(page) {
   await page.goto("/");
-  await page.getByRole("menuitem", { name: "Log In" }).click();
+  await page.getByRole("menuitem", { name: "Connect" }).click();
 
   await expect(page).toHaveURL("/login");
   await page.locator("form input[type='password']").fill("dummypass");

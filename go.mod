@@ -7,7 +7,8 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.11
 	github.com/mtlynch/gorilla-handlers v1.5.2
 	golang.org/x/crypto v0.0.0-20220331220935-ae2d96664a29
-	golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1
+	golang.org/x/sys v0.13.0
+	
 )
 
 require (

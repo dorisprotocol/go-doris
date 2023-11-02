@@ -18,7 +18,7 @@
 .main .header .operate .icon1 {
   width: 0.7rem;
   height: 0.7rem;
-  background-image: url("./static/icon1.png");
+  background-image: url("../../templates/static_/icon1.png");
   background-size: 100% 100%;
 }
 .main .header .operate .btn1 {
@@ -37,7 +37,7 @@
 }
 .main .body .introduceArea {
   padding: 1.73rem 0 0.2rem 0;
-  background-image: url("./static/bgCover1.png");
+  background-image: url("../../templates/static_/bgCover1.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -63,7 +63,7 @@
 .main .body .introduceArea .cover1 {
   width: 9.7rem;
   height: 3.38rem;
-  background-image: url("./static/cover1.png");
+  background-image: url("../../templates/static_/cover1.png");
   background-size: 100%;
   margin: 0 auto;
 }
@@ -94,12 +94,12 @@
 .main .body .whatWeCanDoArea .cover2 {
   width: 11.2rem;
   height: 4.42rem;
-  background-image: url("./static/cover2.png");
+  background-image: url("../../templates/static_/cover2.png");
   background-size: 100%;
   margin: 0 auto;
 }
 .main .body .showDataArea {
-  background-image: url("./static/bgCover2.png");
+  background-image: url("../../templates/static_/bgCover2.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 2.05rem 0 2.1rem 0;
@@ -122,13 +122,13 @@
   background-size: 100%;
 }
 .main .body .showDataArea .content .item .icon.users {
-  background-image: url("./static/userIcon.png");
+  background-image: url("../../templates/static_/userIcon.png");
 }
 .main .body .showDataArea .content .item .icon.files {
-  background-image: url("./static/filesIcon.png");
+  background-image: url("../../templates/static_/filesIcon.png");
 }
 .main .body .showDataArea .content .item .icon.videos {
-  background-image: url("./static/videosIcon.png");
+  background-image: url("../../templates/static_/videosIcon.png");
 }
 .main .body .showDataArea .content .item .count {
   font-size: 0.7rem;
@@ -164,13 +164,13 @@
   background-size: 100%;
 }
 .main .body .circuitArea .step .icon.step_one {
-  background-image: url("./static/stepOne.png");
+  background-image: url("../../templates/static_/stepOne.png");
 }
 .main .body .circuitArea .step .icon.step_two {
-  background-image: url("./static/stepTwo.png");
+  background-image: url("../../templates/static_/stepTwo.png");
 }
 .main .body .circuitArea .step .icon.step_three {
-  background-image: url("./static/stepThree.png");
+  background-image: url("../../templates/static_/stepThree.png");
 }
 .main .body .circuitArea .step .text {
   text-align: center;
@@ -231,13 +231,13 @@
   background-size: 100%;
 }
 .main .footer .content .communityAccounts .accounts .icon.twitter {
-  background-image: url("./static/twitter.png");
+  background-image: url("../../templates/static_/twitter.png");
 }
 .main .footer .content .communityAccounts .accounts .icon.discord {
-  background-image: url("./static/discord.png");
+  background-image: url("../../templates/static_/discord.png");
 }
 .main .footer .content .communityAccounts .accounts .icon.github {
-  background-image: url("./static/github.png");
+  background-image: url("../../templates/static_/github.png");
 }
 .main .footer .content .communityAccounts .accounts .icon:hover {
   cursor: pointer;

@@ -25,7 +25,7 @@
       .icon1 {
         width: px2rem(70px);
         height: px2rem(70px);
-        background-image: url("./static/icon1.png");
+        background-image: url("../../templates/static_/icon1.png");
         background-size: 100% 100%;
       }
 
@@ -49,7 +49,7 @@
   .body {
     .introduceArea {
       padding: px2rem(173px) 0 px2rem(20px) 0;
-      background-image: url('./static/bgCover1.png');
+      background-image: url('../../templates/static_/bgCover1.png');
       background-size: 100% 100%;
       // background: 100% 100%;
       background-repeat: no-repeat;
@@ -78,7 +78,7 @@
       .cover1 {
         width: px2rem(970px);
         height: px2rem(338px);
-        background-image: url("./static/cover1.png");
+        background-image: url("../../templates/static_/cover1.png");
         background-size: 100%;
         margin: 0 auto;
       }
@@ -113,14 +113,14 @@
       .cover2 {
         width: px2rem(1120px);
         height: px2rem(442px);
-        background-image: url("./static/cover2.png");
+        background-image: url("../../templates/static_/cover2.png");
         background-size: 100%;
         margin: 0 auto;
       }
     }
 
     .showDataArea {
-      background-image: url("./static/bgCover2.png");
+      background-image: url("../../templates/static_/bgCover2.png");
       background-size: 100% 100%;
       background-repeat: no-repeat;
       padding: px2rem(205px) 0 px2rem(210px) 0;
@@ -142,15 +142,15 @@
             margin: 0 auto px2rem(58px) auto;
 
             &.users {
-              background-image: url('./static/userIcon.png');
+              background-image: url('../../templates/static_/userIcon.png');
             }
 
             &.files {
-              background-image: url('./static/filesIcon.png');
+              background-image: url('../../templates/static_/filesIcon.png');
             }
 
             &.videos {
-              background-image: url('./static/videosIcon.png');
+              background-image: url('../../templates/static_/videosIcon.png');
             }
 
             background-size: 100%;
@@ -197,15 +197,15 @@
           height: px2rem(140px);
 
           &.step_one {
-            background-image: url('./static/stepOne.png');
+            background-image: url('../../templates/static_/stepOne.png');
           }
 
           &.step_two {
-            background-image: url('./static/stepTwo.png');
+            background-image: url('../../templates/static_/stepTwo.png');
           }
 
           &.step_three {
-            background-image: url('./static/stepThree.png');
+            background-image: url('../../templates/static_/stepThree.png');
           }
 
           background-size: 100%;
@@ -278,15 +278,15 @@
             margin-right: px2rem(8px);
 
             &.twitter {
-              background-image: url('./static/twitter.png');
+              background-image: url('../../templates/static_/twitter.png');
             }
 
             &.discord {
-              background-image: url('./static/discord.png');
+              background-image: url('../../templates/static_/discord.png');
             }
 
             &.github {
-              background-image: url('./static/github.png');
+              background-image: url('../../templates/static_/github.png');
             }
 
             background-size: 100%;

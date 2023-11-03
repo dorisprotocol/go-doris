@@ -2,3 +2,9 @@ body {
     margin: 0;
     background-color: #f5f5f7;
   }
+  
+  .centered-container {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  

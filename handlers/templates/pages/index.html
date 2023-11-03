@@ -9,7 +9,7 @@
     <title>Doris</title>
     <link rel="stylesheet" type="text/css" href="../../static/css/index.css" />
   </head>
-  <body style="margin: 0; background-color: #f5f5f7">
+  <body>
 {{ define "style-tags" }}
 {{ end }}
 
@@ -169,27 +169,9 @@
         </div>
       </div>
     </div>
+    <script src="../../static/js/doris.js"></script>
   </body>
-  <script>
-    function setRem() {
-      let designSize = 1920; // 设计图尺寸
-
-      let html = document.documentElement;
-
-      let wW = html.clientWidth;
-      let rem;
-      if (wW > 640) {
-        rem = (wW * 100) / designSize;
-      } else {
-        rem = (wW * 30) / wW;
-      }
-
-      document.documentElement.style.fontSize = rem + "px";
-    }
-    window.addEventListener("load", setRem);
-    window.addEventListener("resize", setRem);
-  </script>
-</html>
+  
 
 {{ end }}
 {{ template "base.html" }}

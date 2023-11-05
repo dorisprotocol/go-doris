@@ -1,11 +1,3 @@
-const logOutEl = document.getElementById("navbar-log-out");
-if (logOutEl) {
-  logOutEl.addEventListener("click", () => {
-    logOut().then(() => {
-      document.location = "/";
-    });
-  });
-}
 function setRem() {
   let designSize = 1920; // 设计图尺寸
 

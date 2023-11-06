@@ -16,3 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+const logOutEl = document.getElementById("navbar-log-out");
+if (logOutEl) {
+  logOutEl.addEventListener("click", () => {
+    logOut().then(() => {
+      document.location = "/";
+    });
+  });
+}

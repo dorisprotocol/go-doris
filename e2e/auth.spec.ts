@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("logs in and logs out", async ({ page }) => {
   await page.goto("/");
 
-  await page.getByRole("menuitem", { name: "Connect" }).click();
+  await page.getByRole("menuitem", { name: "Log In" }).click();
 
   await expect(page).toHaveURL("/login");
   await page.locator("form input[type='password']").fill("dummypass");
@@ -14,5 +14,5 @@ test("logs in and logs out", async ({ page }) => {
   await page.getByRole("menuitem", { name: "System" }).hover();
   await page.getByRole("menuitem", { name: "Log Out" }).click();
 
-  await expect(page.getByRole("menuitem", { name: "Connect" })).toBeVisible();
+  await expect(page.getByRole("menuitem", { name: "Log In" })).toBeVisible();
 });

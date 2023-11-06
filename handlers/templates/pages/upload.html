@@ -76,9 +76,9 @@
       progressBar.max = bytesTotal;
       const percentage =
         ((bytesUploaded / bytesTotal) * 100.0).toFixed(0) + "%";
-      document.title = "Doris ↑ " + percentage;
+      document.title = "PicoShare ↑ " + percentage;
       if (bytesUploaded === bytesTotal) {
-        document.title = "Doris - Complete";
+        document.title = "PicoShare - Complete";
         showElement(progressSpinner);
       }
     }

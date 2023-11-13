@@ -35,7 +35,7 @@
           {{ else }}
             <div class="navbar-item">
               <a class="button is-primary" role="menuitem" href="/login">
-                contact
+                Connect
               </a>
             </div>
           {{ end }}
@@ -180,6 +180,8 @@
     </div>
   </div>
 </div>
+<script type="module" src="/js/doris.js"></script>
+      {{ template "script-tags" . }}
 {{ end }}
 
 {{ template "base.html" }}

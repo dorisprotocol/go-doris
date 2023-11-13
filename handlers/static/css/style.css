@@ -21,12 +21,14 @@
   background-image: url("./static/icon1.png");
   background-size: 100% 100%;
 }
-.main .header .operate .btn1 {
+.main .header .operate .btn1 a.button.is-primary {
+  font-size: 16px;
+  
   width: fit-content;
   height: 0.42rem;
   background: #4697FD;
   border-radius: 35px;
-  font-size: 0.2rem;
+ 
   font-family: Helvetica Neue;
   font-weight: 500;
   line-height: 0.42rem;
@@ -42,7 +44,7 @@
   background-repeat: no-repeat;
 }
 .main .body .introduceArea .title {
-  margin: 0 auto 0.25rem auto;
+  margin: 0 auto 0.5rem auto;
   text-align: center;
   width: 9.28rem;
   height: 1.35rem;
@@ -72,7 +74,7 @@
   background-color: #F5F5F7;
 }
 .main .body .whatWeCanDoArea .title {
-  margin: 0 auto 0.25rem auto;
+  margin: 0 auto 0.5rem auto;
   text-align: center;
   width: 11.2rem;
   height: 2.08rem;
@@ -145,7 +147,11 @@
   background: #FFFFFF;
   padding: 1.75rem 0;
 }
-.main .body .circuitArea .title {
+.main .body .circuitArea .area {
+  width: fit-content;
+  margin: 0 auto;
+}
+.main .body .circuitArea .area .title {
   text-align: center;
   font-size: 0.56rem;
   font-family: Apple SD Gothic Neo;
@@ -153,26 +159,26 @@
   color: #000000;
   margin-bottom: 0.58rem;
 }
-.main .body .circuitArea .step {
+.main .body .circuitArea .area .step {
   display: flex;
   align-items: center;
   margin-bottom: 0.58rem;
 }
-.main .body .circuitArea .step .icon {
+.main .body .circuitArea .area .step .icon {
   width: 1.4rem;
   height: 1.4rem;
   background-size: 100%;
 }
-.main .body .circuitArea .step .icon.step_one {
+.main .body .circuitArea .area .step .icon.step_one {
   background-image: url("./static/stepOne.png");
 }
-.main .body .circuitArea .step .icon.step_two {
+.main .body .circuitArea .area .step .icon.step_two {
   background-image: url("./static/stepTwo.png");
 }
-.main .body .circuitArea .step .icon.step_three {
+.main .body .circuitArea .area .step .icon.step_three {
   background-image: url("./static/stepThree.png");
 }
-.main .body .circuitArea .step .text {
+.main .body .circuitArea .area .step .text {
   text-align: center;
   width: 8.55rem;
   font-size: 0.24rem;

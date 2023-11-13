@@ -1,7 +1,9 @@
 package space
 
 import (
-	"golang.org/x/sys/unix"
+	"unsafe"
+
+	"golang.org/x/sys/windows"
 )
 
 type (
@@ -24,13 +26,26 @@ func NewChecker(dir string) Checker {
 }
 
 func (c defaultChecker) Check() (CheckResult, error) {
-	var stat unix.Statfs_t
-	if err := unix.Statfs(c.dataDir, &stat); err != nil {
+	var freeBytesAvailableToCaller, totalNumberOfBytes, totalNumberOfFreeBytes int64
+
+	// Convert the directory path to UTF-16
+	dirPath, err := windows.UTF16PtrFromString(c.dataDir)
+	if err != nil {
+		return CheckResult{}, err
+	}
+
+	// Use GetDiskFreeSpaceEx to get disk information
+	if err := windows.GetDiskFreeSpaceEx(
+		dirPath,
+		(*uint64)(unsafe.Pointer(&freeBytesAvailableToCaller)),
+		(*uint64)(unsafe.Pointer(&totalNumberOfBytes)),
+		(*uint64)(unsafe.Pointer(&totalNumberOfFreeBytes)),
+	); err != nil {
 		return CheckResult{}, err
 	}
 
 	return CheckResult{
-		AvailableBytes: stat.Bfree * uint64(stat.Bsize),
-		TotalBytes:     stat.Blocks * uint64(stat.Bsize),
+		AvailableBytes: uint64(freeBytesAvailableToCaller),
+		TotalBytes:     uint64(totalNumberOfBytes),
 	}, nil
 }

@@ -16,7 +16,30 @@
     </div> -->
     <div class="operate">
       <div class="icon1"></div>
-      <div class="btn1">Contact</div>
+      <div class="btn1">
+      {{ if .IsAuthenticated }}
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" role="menuitem">System</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" role="menuitem" href="/settings"
+                  >Settings</a
+                >
+                <a class="navbar-item" role="menuitem" href="/disk-usage"
+                  >Disk Usage</a
+                >
+                <a id="navbar-log-out" class="navbar-item" role="menuitem"
+                  >Log Out</a
+                >
+              </div>
+            </div>
+          {{ else }}
+            <div class="navbar-item">
+              <a class="button is-primary" role="menuitem" href="/login">
+                contact
+              </a>
+            </div>
+          {{ end }}
+      </div>
     </div>
   </div>
   <div class="body">
@@ -70,7 +93,7 @@
     </div>
 
     <div class="circuitArea">
-      <div style="width: fit-content; margin: 0 auto">
+      <div class="area">
         <div class="title">Op Stack Optimism Network Ethereum L2</div>
         <div class="step">
           <div class="icon step_one"></div>

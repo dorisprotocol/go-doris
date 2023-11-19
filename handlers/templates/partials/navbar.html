@@ -1,3 +1,43 @@
-{{ define "navbar" }}
+  
+  <nav class="navbar no-rem" role="navigation">
+    <div class="container">
+      
+      <div id="navbar-links" class="navbar-menu">
+        {{ define "navbar" }}
+        {{ if .IsAuthenticated }}
+          <div class="navbar-start">
+            <div class="navbar-item">
+              <a class="button is-primary is-success" role="menuitem" href="/"
+                >Upload</a
+              > 
+            </div>
+            <a class="navbar-item" role="menuitem" href="/files">Files</a>
+            <a class="navbar-item" role="menuitem" href="/guest-links"
+              >Guest Links</a
+            >
+          </div>
+        {{ end }}
+        <div class="navbar-end">
+          {{ if .IsAuthenticated }} 
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" role="menuitem">System</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" role="menuitem" href="/settings"
+                  >Settings</a
+                >
+                <a class="navbar-item" role="menuitem" href="/disk-usage"
+                  >Disk Usage</a
+                >
+                <a id="navbar-log-out" class="navbar-item" role="menuitem"
+                  >Log Out</a
+                >
+              </div>
+            </div>
+        </div>
+          {{ end }}
+          {{ end }}
+       
+      </div>
+    </div>
+  </nav>
 
-{{ end }}

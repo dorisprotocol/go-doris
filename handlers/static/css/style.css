@@ -37,6 +37,25 @@
   text-align: center;
   cursor: pointer;
 }
+@media screen and (max-width: 800px) {
+  .main .header .operate {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main .header .operate .icon1 {
+    margin-left: 0px;
+  }
+
+  .main .header .operate .btn1 {
+    margin-top: 10px;
+  }
+
+  .main .header .operate .btn1 a.button.is-primary {
+    margin-top: 10px;
+  }
+}
 .main .body .introduceArea {
   padding: 1.73rem 0 0.2rem 0;
   background-image: url("./static/bgCover1.png");

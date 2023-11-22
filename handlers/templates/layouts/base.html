@@ -7,8 +7,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0,minimal-ui" />
       <title>{{ .Title }}</title>
       <link rel="stylesheet" type="text/css" href="/css/style.css" />
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
       {{ template "style-tags" . }}
       <script type="module" src="/js/navbar.js"></script>
+      <script  type="module" src="/js/metamask.js"></script>
       {{ template "script-tags" . }}
       <link
         rel="apple-touch-icon"

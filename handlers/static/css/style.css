@@ -21,22 +21,26 @@
   background-image: url("./static/icon1.png");
   background-size: 100% 100%;
 }
-.main .header .operate .btn1 a.button.is-primary {
-  font-size: 16px;
-  
-  width: fit-content;
-  height: 0.42rem;
-  background: #4697FD;
-  border-radius: 35px;
- 
-  font-family: Helvetica Neue;
-  font-weight: 500;
-  line-height: 0.42rem;
-  padding: 0.02rem 0.28rem;
-  color: #FFFFFF;
+.operate .btn1 #loginButton {
+  border-radius: 10px;
+  width: 100px;
+  height: 40px; 
+  background-color: #87CEEB;
+  color: white;
   text-align: center;
-  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+  top: -20px;
+  border: none; 
 }
+.operate .btn1 #userWallet {
+  font-size: 18px; 
+  color: #333; 
+  margin-top: 0px; 
+}
+
 @media screen and (max-width: 800px) {
   .main .header .operate {
     flex-direction: row;
@@ -49,11 +53,14 @@
   }
 
   .main .header .operate .btn1 {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
-  .main .header .operate .btn1 a.button.is-primary {
-    margin-top: 10px;
+  .main .header .operate .btn1 #loginButton {
+    margin-top: 20px;
+    width: 50px;
+    height: 20px;
+    font-size: 7px;
   }
 }
 .main .body .introduceArea {

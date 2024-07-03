@@ -13,8 +13,9 @@ contract DroisBaseNFTs is ERC721, ReentrancyGuard {
     uint256 private _ref_precent;
     // Mapping from token ID to owner address 
     mapping(uint256 => address) private _owners;
-    
-    constructor(address owner, string memory baseURI_, uint256 ref_precent_) ERC721("auralgenius.com", "AGZ") {
+    //Contract Address:0x72b6840b06B731f89422ABe35d9f3ae17273C325
+    //tokenURI:https://doris.top/css/static/doris_base_nfts.png
+    constructor(address owner, string memory baseURI_, uint256 ref_precent_) ERC721("Doris", "DorisNFT") {
         require(owner != address(0));
         _baseuri = baseURI_;
         _ref_precent = ref_precent_;
